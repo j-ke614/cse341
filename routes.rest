@@ -1,26 +1,36 @@
 // LOCALHOST 
 ### Get all contacts 
-GET https://localhost:8080/contacts
+GET http://localhost:8080/contacts
 
 ### Get contact by id 
-GET http://localhost:8080/contacts/6276d3847f064b186132867a
+GET http://localhost:8080/contacts/6276d3847f064b186132867b
 
 
 ### Create contact 
-POST http://localhost:8080/contacts HTTP/1.1 content-type: application/json
+POST http://localhost:8080/contacts HTTP/1.1
+content-type: application/json
 
 {
-"firstName":"Aubrey", "lastName":"Westfall", "email":"aWestfall@test.com", "favoriteColor":"Brown", "birthday":"06/19/2000"
+"firstName":"Aubrey", 
+"lastName":"Westfall", 
+"email":"aWestfall@test.com", 
+"favoriteColor":"Brown", 
+"birthday":"06/19/2000"
 }
 
 ### PUT contact 
-PUT http://localhost:8080/contacts/6276d3847f064b186132867d HTTP/1.1 content-type: application/json
+PUT http://localhost:8080/contacts/627764f39a79132900520894 HTTP/1.1
+content-type: application/json
 
 {
-"firstName":"Sam", "lastName":"Ballard", "email":"samball@gmail.com", "favoriteColor":"Green", "birthday":"12/12/20"
+"firstName":"Sam",
+"lastName":"Ballard", 
+"email":"samball@gmail.com", 
+"favoriteColor":"Green", 
+"birthday":"12/12/20"
 } 
 ### DELETE contact 
-DELETE http://localhost:8080/contacts/6276d3847f064b186132867a HTTP/1.1
+DELETE http://localhost:8080/contacts/627765739a79132900520895 HTTP/1.1
 
 // PRODUCTION Deploy 
 ### Get all contacts 
@@ -30,14 +40,16 @@ GET https://cse341mode-robboss.herokuapp.com/contacts
 GET https://cse341mode-robboss.herokuapp.com/contacts/622023f642f9ab4cd6e060b3
 
 ### Create contact 
-POST https://cse341mode-robboss.herokuapp.com/contacts HTTP/1.1 content-type: application/json
+POST https://cse341mode-robboss.herokuapp.com/contacts HTTP/1.1
+content-type: application/json
 
 {
 "firstName":"Elon", "lastName":"Musk", "email":"muske@test.com", "favoriteColor":"Brown", "birthday":"06/19/2000"
 }
 
 ### PUT contact 
-PUT https://cse341-instructor.herokuapp.com/contacts/6220bcb39cd507e920c75a0b HTTP/1.1 content-type: application/json
+PUT https://cse341-instructor.herokuapp.com/contacts/6220bcb39cd507e920c75a0b HTTP/1.1
+content-type: application/json
 
 {
 "firstName":"Elon", "lastName":"Musk", "email":"Elonm@gmail.com", "favoriteColor":"Yellow", "birthday":"06/12/85"
