@@ -4,8 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "nodemon server.js",
-    "start": "node server.js"
+    "test": "nodemon app.js",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,5 @@
   "homepage": "https://github.com/j-ke614/cse341#readme",
   "dependencies": {
     "express": "^4.18.0"
-  },
-  "devDependencies": {}
+  }
 }
